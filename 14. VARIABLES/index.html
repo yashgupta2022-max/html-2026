@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS VARIABLES</title>
+    <style>
+      :root {
+        --padding: 10px;
+        --background-color: #e31f1f;
+        --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: aqua;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul li {
+        display: inline-block;
+        padding: var(--padding);
+        text-decoration: none;
+        background-color: var(--background-color);
+      }
+      p {
+        font-family: var(--font-family);
+        padding: var(--padding);
+        color: var(--background-color);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae
+      dignissimos, deserunt architecto quisquam eos. Modi fuga tempore facilis
+      eius natus, exercitationem veritatis! Eum ut ratione facilis recusandae
+      nam cumque qui repellendus ad itaque hic molestiae, quis ipsum corrupti
+      nemo accusantium perspiciatis et atque maiores?
+    </p>
+  </body>
+</html>
