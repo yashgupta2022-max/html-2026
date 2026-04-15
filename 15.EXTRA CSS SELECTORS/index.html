@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Additional CSS Selectors</title>
+    <style>
+      /* .box::first-letter {
+            color: blue;
+        }
+        .box::first-line {
+            color: red;
+        } */
+      /* .boxes * {
+        border: 3px solid black;
+        margin: 10px;
+        padding: 10px;
+        color: cadetblue;
+      } */
+      .boxes::selection {
+        color: red;    /* Change the text color of the selected text */
+        background-color: black; /* Change the background color of the selected text */
+      } 
+      input::placeholder {
+        color: red; /* Change the color of the placeholder text */
+        font-style: italic; /* Make the placeholder text italic */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste,
+        exercitationem culpa ipsa consectetur veritatis magni officiis, pariatur
+        necessitatibus incidunt fugiat possimus quo magnam harum qui neque quas
+        ducimus sequi, aut placeat fugit odit cupiditate officia. Ullam itaque
+        quia iure error omnis alias aliquam. Asperiores inventore est cupiditate
+        hic, nemo vel molestiae nesciunt! Alias, consequuntur obcaecati!
+      </div>
+      <div class="box">This is a box</div>
+      <div class="box">This is a box</div>
+      <input type="text" placeholder="Enter you name">
+    </div>
+  </body>
+</html>
